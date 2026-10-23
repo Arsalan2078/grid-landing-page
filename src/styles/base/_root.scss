@@ -1,0 +1,48 @@
+@layer {
+  :root {
+    // BREAKPOINTS
+    --bp-sm: 24rem;
+    --bp-md: 48rem;
+
+    // COLORS
+    --c-black: rgb(0 0 0);
+    --c-white: rgb(255 255 255);
+    --c-blue-700: rgb(40 84 254);
+    --c-blue-600: rgb(50 92 255);
+    --c-blue-400: rgb(71 132 255);
+    --c-blue-200: rgb(193 206 255);
+
+    // FONT-FAMILIES
+    --ff-inter: "Inter", sans-serif;
+
+    // FONT-WEIGHTS
+    --fw-400: 400;
+    --fw-500: 500;
+
+    // FONT-SIZES
+    --fs-60: 3.75rem;
+    --fs-44: 2.75rem;
+    --fs-36: 2.25rem;
+    --fs-32: 2rem;
+    --fs-17: 1.0625rem;
+    --fs-14: 0.875rem;
+
+    --fs-44-60: calc(
+      var(--fs-44) +
+        (
+          (var(--fs-60) - var(--fs-44)) *
+            progress(100vw, var(--bp-sm), var(--bp-md))
+        )
+    );
+
+    // LINE-HEIGHTS
+    --lh-106: 1.06;
+    --lh-111: 1.11;
+    --lh-160: 1.6;
+    --lh-165: 1.65;
+
+    // LETTER-SPACINGS
+    --ls-0: 0;
+    --ls-neg-200: -0.125rem;
+  }
+}
